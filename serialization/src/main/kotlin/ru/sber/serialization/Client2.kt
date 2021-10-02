@@ -1,8 +1,11 @@
 package ru.sber.serialization
 
+import com.fasterxml.jackson.annotation.JacksonAnnotation
+import com.fasterxml.jackson.annotation.JsonProperty
 import java.time.LocalDate
 
 data class Client2(
+    @JsonProperty("name")
     val firstName: String,
     val lastName: String,
     val middleName: String?,
